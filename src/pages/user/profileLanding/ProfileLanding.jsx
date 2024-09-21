@@ -9,23 +9,15 @@ const ProfileLanding = () => {
         <Row className="align-items-center">
           <Col md={6} className="info">
             <h1>
-              Hi-Tech <span>Solutions</span>
+              RS <span>Store</span>
             </h1>
-            <p className="fw-bolder">
-              Embrace the future with our cutting-edge technology solutions.
-              Create your profile, explore innovative opportunities, and join
-              the tech revolution today!
-            </p>
+            <p className="fw-bolder">RS Store all for your gifts</p>
             <Link to="/signIn">
               <Button className="btn-hero">Login/Register</Button>
             </Link>
           </Col>
           <Col md={6}>
-            <img
-              src={main}
-              alt="Hi-Tech Solutions"
-              className="img-fluid main-img"
-            />
+            <img src={main} alt="RS Gifting" className="img-fluid main-img" />
           </Col>
         </Row>
       </Container>
