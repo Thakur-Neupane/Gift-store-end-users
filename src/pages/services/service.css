@@ -1,0 +1,13 @@
+.services-icon {
+  color: #007bff;
+}
+
+.form-control,
+.btn-primary {
+  border-radius: 0.25rem;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

@@ -1,0 +1,50 @@
+/* Ensure proper alignment and spacing for larger screens */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the search bar container */
+.search-bar-container {
+  margin-left: -50px; /* Push the search bar 50px to the left */
+  flex-grow: 1; /* Allow the search bar to take remaining space */
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust alignment for cart and user icons */
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem; /* Space between nav links */
+}
+
+.navbar-nav .nav-link:last-child {
+  margin-left: 0; /* Remove margin from the last link */
+}
+
+/* Container for the cart icon and badge */
+.cart-icon-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center; /* Vertically center the badge with the icon */
+  margin-left: 1rem; /* Space between cart and user icon */
+}
+
+/* Style for the cart icon */
+.cart-icon {
+  font-size: 24px; /* Adjust size as needed */
+}
+
+/* Style for the badge */
+.ant-badge {
+  position: absolute;
+  top: -10px; /* Adjust to move badge up/down */
+  right: 1px; /* Adjust to move badge left/right */
+  background-color: #ff0000; /* Red badge for visibility */
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px; /* Adjust padding to fit text */
+}
