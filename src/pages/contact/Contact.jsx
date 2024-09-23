@@ -24,10 +24,11 @@ const Contact = () => {
                     <FaPhone className="me-2" /> Phone: +1 234 567 890
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    <FaEnvelope className="me-2" /> Email: support@hi-tech.com
+                    <FaEnvelope className="me-2" /> Email:
+                    support@rsgiftstore.com.au
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    <FaMapMarkerAlt className="me-2" /> Address: 123 Tech
+                    <FaMapMarkerAlt className="me-2" /> Address: 123 gift
                     Street, Sydney, NSW, Australia
                   </ListGroup.Item>
                 </ListGroup>
