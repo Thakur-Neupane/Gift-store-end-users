@@ -6,7 +6,7 @@ import {
   FaTwitter,
   FaChevronRight,
 } from "react-icons/fa";
-
+import { Link } from "react-router-dom"; // Import Link for navigation
 import "./Footer.css";
 
 const Footer = () => {
@@ -25,9 +25,8 @@ const Footer = () => {
             <div className="single-footer">
               <h3>Thank you for scrolling</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                dolorem sapiente corporis quo sint natus cupiditate nobis
-                laudantium in odio!
+                Your journey with us is just beginning. Explore our offerings
+                and celebrate life’s special moments!
               </p>
               <div className="footer-social">
                 <a href="#">
@@ -49,80 +48,29 @@ const Footer = () => {
               <h4>Main Menu</h4>
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to="/">
                     <FaChevronRight /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/about">
                     <FaChevronRight /> About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/service">
                     <FaChevronRight /> Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
-                    <FaChevronRight /> Gallery
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaChevronRight /> Our commitment
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaChevronRight /> Our teachers
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
+                  <Link to="/contact">
                     <FaChevronRight /> Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="single-footer">
-              <h4>Quick Links</h4>
-              <ul>
-                <li>
-                  <a href="#">
-                    <FaChevronRight /> Admission Form
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
-                    <FaChevronRight /> Our Vacancies
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaChevronRight /> Privacy
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaChevronRight /> Terms and Conditions
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaChevronRight /> Quick Link
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaChevronRight /> My Love
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaChevronRight /> Haha
-                  </a>
+                  <Link to="/faq">
+                    <FaChevronRight /> FAQ
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -131,24 +79,13 @@ const Footer = () => {
               <h4>Contact Us</h4>
               <ul>
                 <li>
-                  <a href="#">
-                    <FaChevronRight /> Bidur - 4 Battar Nuwakot
-                  </a>
+                  <FaChevronRight /> Bidur - 4 Battar Nuwakot
                 </li>
                 <li>
-                  <a href="#">
-                    <FaChevronRight /> Phone: 23456789
-                  </a>
+                  <FaChevronRight /> Phone: 23456789
                 </li>
                 <li>
-                  <a href="#">
-                    <FaChevronRight /> Email: put gmail here
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaChevronRight /> Principal Phone
-                  </a>
+                  <FaChevronRight /> Email: your-email@example.com
                 </li>
               </ul>
             </div>
