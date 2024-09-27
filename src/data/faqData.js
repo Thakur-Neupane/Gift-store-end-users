@@ -1,112 +1,78 @@
 export const faqs = [
+  // Existing FAQs...
   {
-    question: "What is RS Store?",
+    question: "What types of gifts do you offer?",
     answer:
-      "RS Store is your go-to destination for unique and thoughtful gifts for every occasion, from birthdays to anniversaries.",
+      "We offer a diverse range of gifts, including personalized items, home decor, gourmet treats, and more, suitable for all ages and occasions.",
   },
   {
-    question: "How can I contact support?",
+    question: "Can I customize a gift?",
     answer:
-      'You can reach our <a href="/contact">support team</a> via email at support@rsstore.com or by calling our customer service line at (123) 456-7890.',
+      "Yes! Many of our products can be personalized to add a special touch. Look for the customization options on the product pages.",
   },
   {
-    question: "Where can I find more information about your products?",
+    question: "Do you have a loyalty program?",
     answer:
-      'For details about our products, visit our <a href="/about">About Us</a> page or explore our blog for gift ideas and trends.',
+      "Yes, we have a loyalty program that rewards you for every purchase. Sign up on our website to start earning points towards discounts on future orders!",
   },
   {
-    question: "How do I update my profile?",
+    question: "How often do you update your product selection?",
     answer:
-      "To update your profile, log in to your account and go to the profile settings page where you can edit your information.",
+      "We regularly update our inventory with new and seasonal items. Be sure to check back often for fresh gift ideas!",
   },
   {
-    question: "Do you offer any discounts?",
+    question: "What is your policy on backordered items?",
     answer:
-      "Yes! We frequently offer seasonal promotions and discounts. Sign up for our newsletter to stay updated on the latest offers.",
+      "If an item is backordered, we will notify you via email with an estimated shipping date. You can choose to wait for the item or cancel your order at any time.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "Can I schedule a delivery date for my gift?",
     answer:
-      "We accept major credit cards, PayPal, and bank transfers. For more details, please visit our <a href='/payment'>Payment Methods</a> page.",
+      "Yes, you can select a specific delivery date during checkout to ensure your gift arrives just in time for the occasion.",
   },
   {
-    question: "Can I track my order?",
+    question: "Do you offer bulk purchasing or corporate gifting?",
     answer:
-      "Absolutely! You can track your order status by logging into your account and visiting the 'Order History' section. You'll also receive email updates with tracking information.",
+      "Absolutely! We offer bulk purchasing options for corporate gifts or events. Please contact our support team for more information and pricing.",
   },
   {
-    question: "What is your return policy?",
+    question: "What if I want to send a gift anonymously?",
     answer:
-      "We offer a 30-day return policy on most items. For detailed information, please visit our <a href='/returns'>Returns</a> page.",
+      "You can choose to send your gift without including a sender name. Just let us know during the checkout process.",
   },
   {
-    question: "Do you offer international shipping?",
+    question: "Are your products eco-friendly?",
     answer:
-      "Yes, we ship internationally to many countries. Check our <a href='/shipping'>Shipping</a> page for rates and delivery times.",
+      "We strive to offer eco-friendly products and packaging. Look for our eco-friendly label on select items.",
   },
   {
-    question: "How can I unsubscribe from the newsletter?",
+    question: "Can I leave a gift message?",
     answer:
-      "To unsubscribe, click the 'unsubscribe' link at the bottom of any email you receive, or visit our <a href='/unsubscribe'>Unsubscribe</a> page.",
+      "Yes! You can include a personalized message with your gift at checkout. We'll print it on a beautiful card for you.",
   },
   {
-    question: "What should I do if I forgot my password?",
+    question: "What happens if I receive the wrong item?",
     answer:
-      "If you've forgotten your password, click the 'Forgot Password' link on the login page. You'll receive an email with instructions to reset it.",
+      "If you receive the wrong item, please contact our support team within 7 days of receiving your order. We’ll ensure you receive the correct item promptly.",
   },
   {
-    question: "How can I change my account email address?",
+    question: "How can I stay updated on new arrivals and promotions?",
     answer:
-      "To change your email address, log in to your account and go to the account settings page. Enter your new email and follow the verification steps.",
+      "Sign up for our newsletter and follow us on social media to receive the latest updates on new arrivals, special promotions, and gift ideas!",
   },
   {
-    question: "How do I cancel my subscription?",
+    question: "Do you offer workshops or events related to gifting?",
     answer:
-      "To cancel your subscription, log in to your account, navigate to the subscription management page, and follow the instructions. You'll receive a confirmation email once processed.",
+      "Yes! We occasionally host workshops and events focused on gift-giving and creativity. Keep an eye on our website for upcoming events.",
   },
   {
-    question: "Are my personal details secure?",
+    question: "What is your most popular gift item?",
     answer:
-      "Yes, we take your privacy seriously. We use industry-standard encryption and security measures to protect your personal information. For details, please review our <a href='/privacy-policy'>Privacy Policy</a>.",
+      "Our most popular items change seasonally, but personalized gifts and curated gift boxes tend to be favorites among our customers.",
   },
   {
-    question: "How can I update my billing information?",
+    question: "Can I find gifts for specific interests or hobbies?",
     answer:
-      "To update your billing information, log in to your account and navigate to the billing settings page where you can add or update your payment methods and billing address.",
-  },
-  {
-    question: "Do you offer gift wrapping services?",
-    answer:
-      "Yes, we offer gift wrapping for an additional charge. You can select this option at checkout.",
-  },
-  {
-    question: "What are your customer service hours?",
-    answer:
-      "Our customer service team is available Monday through Friday, from 9 AM to 6 PM. For urgent inquiries, please email us at support@rsstore.com.",
-  },
-  {
-    question: "How can I provide feedback about your services?",
-    answer:
-      "We welcome your feedback! Please visit our <a href='/feedback'>Feedback</a> page to share your thoughts and suggestions.",
-  },
-  {
-    question: "Can I change my delivery address after placing an order?",
-    answer:
-      "If you need to change your delivery address after placing an order, please contact our support team as soon as possible. Changes can only be made before dispatch.",
-  },
-  {
-    question: "What should I do if I receive a damaged or incorrect item?",
-    answer:
-      "If you receive a damaged or incorrect item, please contact our support team within 7 days of receiving your order. We'll assist you with the return or replacement process.",
-  },
-  {
-    question: "How do I access my purchase history?",
-    answer:
-      "To access your purchase history, log in to your account and go to the 'Order History' section, where you'll find a list of your past purchases.",
-  },
-  {
-    question: "Do you offer gift cards?",
-    answer:
-      "Yes, we offer gift cards in various denominations. You can purchase them through our <a href='/gift-cards'>Gift Cards</a> page.",
+      "Absolutely! We have categories dedicated to various interests, such as cooking, gardening, and self-care, making it easy to find the perfect gift for any hobbyist.",
   },
 ];
