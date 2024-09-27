@@ -74,6 +74,40 @@ const About = () => {
           your gift-giving journey and can’t wait to help you celebrate life’s
           beautiful moments!
         </p>
+
+        <section className="my-10">
+          <h2 className="text-3xl font-semibold mb-4">Meet Our Founder</h2>
+          <p className="text-lg mb-4">
+            RS Gifting Store was founded by [Your Name], a passionate gift-giver
+            and a firm believer in the power of thoughtful gestures. With a
+            background in [your background, e.g., design, retail, etc.], [Your
+            Name] envisioned a space where people could find gifts that resonate
+            on a personal level, making every occasion even more special.
+          </p>
+          <p className="text-lg mb-4">
+            Inspired by the joy that gifts bring to people, [Your Name] has
+            curated a selection that reflects a diverse range of styles,
+            preferences, and meaningful stories. When not managing the store,
+            [Your Name] enjoys [your hobbies or interests], always looking for
+            new ideas to inspire others.
+          </p>
+        </section>
+
+        <section className="my-10">
+          <h2 className="text-3xl font-semibold mb-4">Join Our Community</h2>
+          <p className="text-lg mb-4">
+            We believe in building a community where gift-giving is celebrated
+            and shared. Join our newsletter for exclusive offers, gift guides,
+            and tips to make your celebrations even more special. Follow us on
+            social media to stay connected and share your gift-giving moments
+            with us!
+          </p>
+        </section>
+
+        <p className="text-lg mb-4">
+          Thank you for being a part of RS Gifting Store. We can’t wait to help
+          you create beautiful memories with your loved ones!
+        </p>
       </main>
     </div>
   );
