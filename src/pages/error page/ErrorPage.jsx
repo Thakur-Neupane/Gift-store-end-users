@@ -5,22 +5,14 @@ import "./error.css";
 
 const ErrorPage = () => {
   return (
-    <Container className="error-page d-flex align-items-center justify-content-center min-vh-100 text-center">
+    <Container className="d-flex align-items-center justify-content-center min-vh-100 text-center">
       <Row>
         <Col>
-          <Image src={img} alt="not-found" className="img-fluid mb-4 animate" />
-          <h3>Oh No! Page Not Found</h3>
-          <p>
-            It seems we've hit a dead end. The page you're looking for is
-            missing.
-          </p>
-          <Button
-            variant="primary"
-            as={Link}
-            to="/"
-            className="back-home-button"
-          >
-            Go Back Home
+          <Image src={img} alt="not-found" className="img-fluid mb-4" />
+          <h3>Ohh! Page Not Found</h3>
+          <p>We can't seem to find the page you're looking for</p>
+          <Button variant="primary" as={Link} to="/">
+            Back Home
           </Button>
         </Col>
       </Row>
