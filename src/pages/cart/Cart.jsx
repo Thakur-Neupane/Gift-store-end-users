@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import ProductCardInCheckout from "../../components/card/ProductCardInCheckout";
@@ -9,7 +9,10 @@ const Cart = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const cart = useSelector((state) => state.cartInfo);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const cart = useSelector((state) => state.cartInfo || []);
   const user = useSelector((state) => state.userInfo.user);
 
   const getTotal = () => {
@@ -24,16 +27,19 @@ const Cart = () => {
         items: cart,
         total: getTotal(),
         userId: user._id,
-        title: cart.name,
       };
+
+      setLoading(true);
+      setError(null);
 
       try {
         await dispatch(saveOrderAction(orderData));
-
-        // Navigate to checkout with the actual user ID
         navigate(`/checkout/${user._id}`);
       } catch (err) {
         console.error("Error saving order:", err);
+        setError("Failed to save order. Please try again.");
+      } finally {
+        setLoading(false);
       }
     } else {
       navigate("/signIn", { state: { from: location.pathname } });
@@ -93,12 +99,17 @@ const Cart = () => {
           <hr />
           Total: <b>${getTotal()}</b>
           <hr />
+          {error && <p className="text-danger">{error}</p>}
           <button
             onClick={handleProceedToCheckout}
             className="btn btn-sm btn-primary mt-2"
-            disabled={!cart.length}
+            disabled={!cart.length || loading}
           >
-            {user ? "Proceed to Checkout" : "Login to Checkout"}
+            {loading
+              ? "Processing..."
+              : user
+              ? "Proceed to Checkout"
+              : "Login to Checkout"}
           </button>
         </div>
       </div>
